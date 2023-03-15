@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* HEADER */
+header{
+    width: 100%;
+    background-color: rgb(241, 241, 228);
+    border: 1px solid rgb(199, 199, 199);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.container{
+    padding: 0 5%;
+}
+.container .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 15px;
+}
+nav ul li a:hover{
+    color: #fff;
+    font-size: 17px;
+    background-color: brown;
+    border-radius: 5px;
+}
+nav ul li input{
+    visibility: hidden;
+
+}
+nav ul li:hover input{
+    visibility: visible;
+}
+nav ul li:hover input::placeholder{
+    text-align: center;
+}
+nav ul li:hover input:focus{
+    text-align: center;
+}
+
+
+
+/* SECTION CONTACT */
+.contact{
+    height: 100vh;
+    background-image: url(img.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    margin-top: 57px;
+}
+.contact .text{
+    width: 50%;
+}
+.contact .text h1{
+    padding-bottom: 10px;
+}
+/* SECTION BG-ATTACHMEN */
+.bg-attachmen{
+    height: 80vh;
+    background-image: url(web.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* SECTION BOX */
+.box{
+    height: 100vh;
+    background-color: bisque;
+    position: relative;
+
+}
+
+.box1{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3{
+    right: 0;
+}
+.box4{
+    bottom: 0;
+    left: 0;
+}
+.box5{
+    bottom: 0;
+    right: 0;
+}
+.box6{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
