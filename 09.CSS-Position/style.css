@@ -39,7 +39,6 @@ nav ul li a:hover{
 }
 nav ul li input{
     visibility: hidden;
-
 }
 nav ul li:hover input{
     visibility: visible;
