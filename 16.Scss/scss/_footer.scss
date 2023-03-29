@@ -1,0 +1,21 @@
+footer {
+  background-color: rgb(239, 240, 240);
+  height: 60vh;
+  margin-top: 20px;
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 100px;
+    ul{
+        li{
+            line-height: 30px;
+            opacity: 0.7;
+            letter-spacing: 1.2;
+            a{
+                color: #000;
+            }
+        }
+    }
+  }
+}

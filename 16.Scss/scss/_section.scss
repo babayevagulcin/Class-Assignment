@@ -1,0 +1,35 @@
+section {
+  height: 100vh;
+  .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    border: 2px solid #000;
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      background-color: rgb(163, 141, 85);
+      border: 1px dashed #000;
+      &:hover {
+        transform: rotateX(360deg);
+        transition-duration: 1.2s;
+        h3 {
+          display: none;
+        }
+        img {
+          display: block;
+        }
+      }
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      display: none;
+    }
+  }
+}
