@@ -16,7 +16,6 @@ section {
       background-color: rgb(163, 141, 85);
       border: 1px dashed #000;
       &:hover {
-        transform: rotateX(360deg);
         transition-duration: 1.2s;
         h3 {
           display: none;
