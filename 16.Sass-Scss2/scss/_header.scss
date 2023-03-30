@@ -1,0 +1,86 @@
+header{
+    background-image: url(../img/back.png);
+    background-size: cover;
+    width: 100%;
+    .header{
+        height: 100vh;
+        nav{
+            height: 70px;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+                li{
+                    &:hover{
+                        &::after{
+                            content: "";
+                            border: 1px solid red;
+                            display: block;
+                            width: 20px;
+                        }
+                    }
+                    a{
+                        color: #fff;
+                        img{
+                            width: 50px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+
+        }
+        .bg-img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 25%;
+            color: #fff;
+            
+            h3{
+                font-family: 'Dancing Script', cursive;
+                text-decoration: line-through;
+                color: burlywood;
+            }
+            h1{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+            .link{
+                &:hover{
+                    a{
+                        background-color: bisque;
+                        color: #000;
+                    }
+                }
+            a{
+                color: #fff;
+                background-color: rgb(170, 142, 105);
+                text-align: center;
+                width: 90px;
+                padding: 10px;
+                font-family: 'Open Sans', sans-serif;
+            }
+        
+        }
+    }
+    .cover{
+        position: relative;
+        img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            &:hover{
+                transform: translateY(80%);
+                transition-duration: 2s;
+            }
+        }
+    }
+}
+}
