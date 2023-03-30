@@ -1,0 +1,29 @@
+header {
+    background-color: #000;
+    nav {
+        height: 50px;
+        width: 100%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        li {
+          padding: 5px 10px;
+          border-radius: 10px;
+          &:hover {
+            background-color: #fff;
+            transform: scale(1.2);
+            transition-duration: 1s;
+            a {
+              color: #000;
+            }
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
