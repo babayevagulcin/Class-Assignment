@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar {
+  height: 100vh;
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+#navbar nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+}
+#navbar nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+#navbar nav ul li {
+  position: relative;
+}
+#navbar nav ul li img {
+  width: 100px;
+}
+#navbar nav ul li:hover a {
+  color: black;
+}
+#navbar nav ul li:hover::after {
+  content: "";
+  border: 1px solid brown;
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+#about {
+  padding: 50px 0;
+}
+#about .row img {
+  width: 200px;
+}
+
+#contact {
+  border: 1px solid black;
+  height: 100vh;
+}
+#contact .contact {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+#contact .contact .text h2 {
+  color: #4a4a4a;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-left: 35px;
+  font-size: 50px;
+}
+#contact .contact .form form input {
+  color: #373a3c;
+  border: 1px dashed #373a3c;
+  padding: 10px 20px;
+  outline: none;
+  width: 230px;
+}
+#contact .contact .form form select {
+  color: #373a3c;
+  border: 1px dashed #373a3c;
+  padding: 10px 20px;
+  outline: none;
+}
+#contact .contact .form form .select {
+  width: 462px;
+}
+#contact .contact .form form .number {
+  width: 358px;
+}
+#contact .contact .form form button {
+  background-color: #fcba00;
+  padding: 15px 0;
+  border: none;
+  margin-top: 50px;
+  width: 462px;
+}
+@media only screen and (max-width: 767px) {
+  #contact .contact {
+    flex-direction: column;
+  }
+  #contact .contact .text {
+    width: 100%;
+  }
+  #contact .contact .form {
+    width: 100%;
+  }
+}
+
+#section-bg {
+  height: 100vh;
+  background-image: url(../images/attachment.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#section-bg .bg-opasity {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#section-bg .bg-opasity h1 {
+  color: white;
+}
+
+#minions {
+  padding: 50px 0;
+  max-width: 1440px;
+}
+#minions h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#minions h1::after {
+  content: "";
+  border: 1px solid goldenrod;
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+}
+#minions .row {
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+#minions .row .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: white;
+  border: 1px dashed black;
+}
+#minions .row .box:nth-child(odd) {
+  background-color: #923e8b;
+}
+#minions .row .box:nth-child(odd):hover {
+  background-image: url(../images/minion-1.png);
+  background-size: cover;
+  transform: rotateX(360deg);
+  transition-duration: 2s;
+}
+#minions .row .box:nth-child(odd):hover h2 {
+  display: none;
+}
+#minions .row .box:nth-child(even) {
+  background-color: #1aab5c;
+}
+#minions .row .box:nth-child(even):hover {
+  background-image: url(../images/minion-3.png);
+  background-size: cover;
+  transform: rotateX(360deg);
+  transition-duration: 2s;
+}
+#minions .row .box:nth-child(even):hover h2 {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

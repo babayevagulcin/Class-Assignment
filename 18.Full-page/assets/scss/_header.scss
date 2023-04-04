@@ -1,0 +1,36 @@
+#navbar {
+  height: 100vh;
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      li {
+        position: relative;
+        img {
+          width: 100px;
+        }
+        &:hover {
+          a {
+            color: black;
+          }
+          &::after {
+            content: "";
+            border: 1px solid brown;
+            display: block;
+            position: absolute;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#contact {
+  border: 1px solid black;
+  height: 100vh;
+
+  .contact {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    .text {
+      h2 {
+        color: #4a4a4a;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding-left: 35px;
+        font-size: 50px;
+      }
+    }
+    .form {
+      form {
+        input {
+          color: #373a3c;
+          border: 1px dashed #373a3c;
+          padding: 10px 20px;
+          outline: none;
+          width: 230px;
+        }
+        select {
+          color: #373a3c;
+          border: 1px dashed #373a3c;
+          padding: 10px 20px;
+          outline: none;
+        }
+        .select {
+          width: 462px;
+        }
+        .number {
+          width: 358px;
+        }
+        button {
+          background-color: #fcba00;
+          padding: 15px 0;
+          border: none;
+          margin-top: 50px;
+          width: 462px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact {
+      flex-direction: column;
+      .text {
+        width: 100%;
+      }
+      .form {
+        width: 100%;
+      }
+    }
+  }
+}
